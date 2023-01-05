@@ -2,7 +2,10 @@ import React from 'react'
 
 function SingUpInfo() {
   return (
-    <div>SingUpInfo</div>
+    <div className="sing-up-container">
+      SingUpInfo
+      <input type="text" placeholder="Email..."/>
+      </div>
   )
 }
 
