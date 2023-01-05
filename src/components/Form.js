@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function Form(){
+
+    const [page, setPage] = useState(0);
     return(
         <div cassName="form">
             <div className="progressbar"></div>
