@@ -2,12 +2,10 @@
 
 .App {
   background: rgb(255, 0, 228);
-  background: radial-gradient(
-    circle,
-    rgba(255, 0, 228, 1) 0%,
-    rgba(212, 51, 16, 1) 84%,
-    rgba(255, 0, 95, 1) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(255, 0, 228, 1) 0%,
+      rgba(212, 51, 16, 1) 84%,
+      rgba(255, 0, 95, 1) 100%);
   width: 100vw;
   height: 100vh;
   display: grid;
@@ -20,18 +18,39 @@ body {
   font-family: montserrat, arial, verdana;
 }
 
+.progress {
+  width: 275px;
+  height: 570px;
+  float: left;
+  background-color: red;
+  margin-top: 20px;
+  border-radius: 1em;
+  margin-left:50px;
+}
+
+.container {
+  width: 940px;
+  height: 600px;
+  background-color: white;
+  position: relative;
+}
+
 .form {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
+
 }
 
 .form-container {
+  margin-top:20px;
+  margin-right: 50px;
+  float: right;
   width: 400px;
-  height: 400px;
+  height: 570px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
@@ -104,7 +123,15 @@ body {
   font-size: 20px;
 }
 
-/* PROGRESS BAR */
+.progress img{
+  width:100%;
+  height:100%
+}
+
+/* PROGRESS BAR 
+
+
+
 .progressbar {
   width: 400px;
   height: 10px;
@@ -117,6 +144,7 @@ body {
   height: 100%;
   background-color: rgb(98, 0, 255);
 }
+*/
 
 .other-info-container {
   height: 100%;

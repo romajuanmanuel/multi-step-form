@@ -3,6 +3,14 @@ import SignUpInfo from "./SignUpInfo";
 import PersonalInfo from "./PersonalInfo";
 import OtherInfo from "./OtherInfo";
 import Svg from "./Svg";
+import background from "../img/back.jpg";
+
+
+const myStyle = {
+    backgroundImage: `url(${background})`,
+    height:"100%",
+    weight:"100%"
+} 
 
 function Form() {
     const miImagen= '/images/bg-sidebar-desktop.jpg' 
@@ -18,7 +26,7 @@ function Form() {
         other: "",
     });
 
-    const FormTitles = ["Sign Up", "Personal Info", "Other"];
+        const FormTitles = ["Sign Up", "Personal Info", "Other"];
 
     const PageDisplay = () => {
         if (page === 0) {
@@ -66,8 +74,10 @@ function Form() {
                         </button>
                     </div>
                 </div>
-                <div className="progress">
-                           
+                <div className="progress"  style={{backgroundImage: `url(${background})`,
+    height:"100%",
+    weight:"100%" }}>
+
                 </div>
             </div>
         </div>
