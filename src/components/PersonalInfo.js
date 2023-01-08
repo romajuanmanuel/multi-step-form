@@ -3,7 +3,6 @@ import React from "react";
 function PersonalInfo({ formData, setFormData }) {
   return (
     <div className="personal-info-container">
-      <h1>Name</h1>
       <input
         type="text"
         placeholder=" Name..."

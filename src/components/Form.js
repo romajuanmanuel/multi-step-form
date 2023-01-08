@@ -23,10 +23,10 @@ function Form() {
     const PageDisplay = () => {
         if (page === 0) {
             return <SignUpInfo formData={formData} setFormData={setFormData} />;
-        } else if (page === 1) {
-            return <PersonalInfo formData={formData} setFormData={setFormData} />;
-        } else if (page === 2) {
+        } else if (page === 1) { 
             return <SelectPlan formData={formData} setFormData={setFormData} />;
+        } else if (page === 2) {
+            return <PersonalInfo formData={formData} setFormData={setFormData} />;
         } else {
             return <FinishingUp formData={formData} setFormData={setFormData} />;
         }

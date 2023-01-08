@@ -2,7 +2,7 @@ import React from "react";
 
 function FinishingUp({ formData, setFormData }) {
   return (
-    <div className="other-info-container">
+    <div className="finishing-up-container">
       <input
         type="text"
         placeholder="Random..."

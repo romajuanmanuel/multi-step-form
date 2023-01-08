@@ -2,7 +2,7 @@ import React from "react";
 
 function SelectPlan({ formData, setFormData }) {
   return (
-    <div className="other-info-container">
+    <div className="select-plan-container">
       <input
         type="text"
         placeholder="Nationality..."

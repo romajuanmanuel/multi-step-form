@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
 
 .App {
   background: rgb(255, 0, 228);
@@ -15,7 +16,8 @@
 body {
   margin: 0%;
   padding: 0%;
-  font-family: montserrat, arial, verdana;
+  font-family: 'Ubuntu', sans-serif;
+  
 }
 
 .progress {
@@ -41,7 +43,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;  
-
+  text-align: left;
 }
 
 .form-container {
@@ -98,7 +100,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
+  text-align: left;
+  margin-left: 5px;
 }
 
 .sign-up-container input {
@@ -107,6 +111,7 @@ body {
   height: 40px;
   padding-left: 5px;
   font-size: 20px;
+  
 }
 
 .personal-info-container {
@@ -131,7 +136,7 @@ body {
   height:100%
 }
 
-.other-info-container {
+.finishing-up-container {
   height: 100%;
   width: 100%;
   display: flex;
@@ -140,7 +145,24 @@ body {
   align-items: center;
 }
 
-.other-info-container input {
+.finishing-up-container input {
+  margin: 5px;
+  width: 200px;
+  height: 40px;
+  padding-left: 5px;
+  font-size: 20px;
+}
+
+.select-plan-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-plan-container input {
   margin: 5px;
   width: 200px;
   height: 40px;
