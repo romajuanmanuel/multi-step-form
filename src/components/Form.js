@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import SignUpInfo from "./SignUpInfo";
 import PersonalInfo from "./PersonalInfo";
-import OtherInfo from "./OtherInfo";
+import SelectPlan from "./SelectPlan";
 import SvgComponent from "./Svg";
-
+import FinishingUp from "./FinishinUp";
 
 function Form() {
     const [page, setPage] = useState(0);
@@ -18,26 +18,23 @@ function Form() {
         other: "",
     });
 
-    const FormTitles = ["Sign Up", "Personal Info", "Other"];
+    const FormTitles = ["Personal Info", "Select your Plan", "Pick Addons","Finising Up"];
 
     const PageDisplay = () => {
         if (page === 0) {
             return <SignUpInfo formData={formData} setFormData={setFormData} />;
         } else if (page === 1) {
             return <PersonalInfo formData={formData} setFormData={setFormData} />;
+        } else if (page === 2) {
+            return <SelectPlan formData={formData} setFormData={setFormData} />;
         } else {
-            return <OtherInfo formData={formData} setFormData={setFormData} />;
+            return <FinishingUp formData={formData} setFormData={setFormData} />;
         }
     };
 
     return (
         <div className="form">
             <div className="container">
-                <div className="progressbar">
-                    <div
-                        style={{ width: page === 0 ? "33.3%" : page == 1 ? "66.6%" : "100%" }}
-                    ></div>
-                </div>
                 <div className="form-container">
                     <div className="header">
                         <h1>{FormTitles[page]}</h1>

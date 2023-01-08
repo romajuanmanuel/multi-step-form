@@ -1,11 +1,11 @@
 import React from "react";
 
-function OtherInfo({ formData, setFormData }) {
+function FinishingUp({ formData, setFormData }) {
   return (
     <div className="other-info-container">
       <input
         type="text"
-        placeholder="Nationality..."
+        placeholder="Random..."
         value={formData.nationality}
         onChange={(e) => {
           setFormData({ ...formData, nationality: e.target.value });
@@ -23,4 +23,4 @@ function OtherInfo({ formData, setFormData }) {
   );
 }
 
-export default OtherInfo;
+export default FinishingUp;
