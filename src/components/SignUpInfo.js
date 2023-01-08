@@ -1,6 +1,22 @@
 import React from "react";
 
 function SignUpInfo({ formData, setFormData }) {
+ 
+  /* ver error 
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
+  const [error, setError] = useState(false)
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (firstName.length == 0 || lastName.length == 0) {
+      setError(true)
+    }
+    if (firstName && lastName) {
+      console.log("First Name: ", firstName, "\nLast Name: ", lastName)
+    }
+  }*/
+
   return (
     <div className="sign-up-container">
       <div>Name</div>
@@ -13,7 +29,7 @@ function SignUpInfo({ formData, setFormData }) {
         }
       />
       <div>Email Adress</div>
-       <input
+      <input
         type="text"
         placeholder="Email Adress"
         value={formData.email}
