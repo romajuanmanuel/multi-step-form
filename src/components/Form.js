@@ -2,18 +2,10 @@ import React, { useState } from "react";
 import SignUpInfo from "./SignUpInfo";
 import PersonalInfo from "./PersonalInfo";
 import OtherInfo from "./OtherInfo";
-import Svg from "./Svg";
-import background from "../img/back.jpg";
+import SvgComponent from "./Svg";
 
-
-const myStyle = {
-    backgroundImage: `url(${background})`,
-    height:"100%",
-    weight:"100%"
-} 
 
 function Form() {
-    const miImagen= '/images/bg-sidebar-desktop.jpg' 
     const [page, setPage] = useState(0);
     const [formData, setFormData] = useState({
         email: "",
@@ -26,7 +18,7 @@ function Form() {
         other: "",
     });
 
-        const FormTitles = ["Sign Up", "Personal Info", "Other"];
+    const FormTitles = ["Sign Up", "Personal Info", "Other"];
 
     const PageDisplay = () => {
         if (page === 0) {
@@ -52,7 +44,7 @@ function Form() {
                     </div>
                     <div className="body">{PageDisplay()}</div>
                     <div className="footer">
-                        <button
+                        <button className={page === 0 ? "hidden" : ""}
                             disabled={page == 0}
                             onClick={() => {
                                 setPage((currPage) => currPage - 1);
@@ -60,7 +52,7 @@ function Form() {
                         >
                             Prev
                         </button>
-                        <button
+                        <button 
                             onClick={() => {
                                 if (page === FormTitles.length - 1) {
                                     alert("FORM SUBMITTED");
@@ -74,10 +66,8 @@ function Form() {
                         </button>
                     </div>
                 </div>
-                <div className="progress"  style={{backgroundImage: `url(${background})`,
-    height:"100%",
-    weight:"100%" }}>
-
+                <div className="progress">
+                    <SvgComponent />
                 </div>
             </div>
         </div>

@@ -71,7 +71,7 @@ body {
 .form-container .footer {
   flex: 20%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .form-container .footer button {
@@ -87,6 +87,10 @@ body {
   padding: 10px 5px;
   margin: 10px 5px;
   margin: 5px;
+}
+.form-container .footer .hidden{
+  background-color: white;
+  cursor: default;
 }
 
 .sign-up-container {
